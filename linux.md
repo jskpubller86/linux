@@ -138,6 +138,25 @@ ref )   루트 파티션만 생성해서 마운트 해도  나머지 파티션�
 
 
 
+# 파일 정보
+
+<table>
+    <tr>
+    	<td>-</td>
+        <td>rwxr--r--</td>
+        <td>1</td>
+        <td>root</td>
+        <td>root</td>
+        <td>0</td>
+        <td>7월 15 16:11</td>
+        <td>sample.txt</td>
+    </tr>
+</table>
+
+
+
+
+
 
 
 
