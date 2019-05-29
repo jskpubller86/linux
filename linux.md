@@ -151,16 +151,119 @@ ref )   루트 파티션만 생성해서 마운트 해도  나머지 파티션�
         <td>7월 15 16:11</td>
         <td>sample.txt</td>
     </tr>
+</table>    
+<table>
+    <tr>
+    	<th>-</th>
+        <td>파일유형</td>
+    </tr>
+    <tr>
+    	<th>rwxr--r--</th>
+        <td>권한</td>
+    </tr>
+    <tr>
+    	<th>1</th>
+        <td>링크 수</td>
+    </tr>
+    <tr>
+    	<th>root</th>
+        <td>파일 소유자 이름</td>
+    </tr>
+    <tr>
+    	<th>root</th>
+        <td>파일 소유그룹 이름</td>
+    </tr>
+    <tr>
+    	<th>0</th>
+        <td>파일크기(Byte)</td>
+    </tr>
+    <tr>
+    	<th>7월 15 16:11</th>
+        <td>마지막 변경 날짜/시간</td>
+    </tr>
+    <tr>
+    	<th>sample.txt</th>
+        <td>파일이름</td>
+    </tr>
 </table>
 
 
 
+## 파일의 유형
+
+파일이 어떤 종류의 파일인지를 나타낸다. 
+
+<table>
+    <tr>
+    	<th>d</th>
+        <td>디렉터리</td>
+    </tr>
+    <tr>
+    	<th>-</th>
+        <td>파일</td>
+    </tr>
+    <tr>
+    	<th>b</th>
+        <td>블록 디바이스</td>
+    </tr>
+    <tr>
+    	<th>c</th>
+        <td>문자 디바이스</td>
+    </tr>
+    <tr>
+    	<th>l</th>
+        <td>링크</td>
+    </tr>
+</table>
+
+## 파일 허가권
+
+파일 허가권은 3개씩 끊어서 인식한다.
+
+<table>
+    <tr>
+    	<td>rwx</td>
+        <td>rwx</td>
+        <td>rwx</td>
+    </tr>
+    <tr>
+    	<td>사용자 권한</td>
+        <td>그룹 권한</td>
+        <td>게스트 권한</td>
+    </tr>
+</table>
+
+- r : read
+- w : write
+- x : execute 
 
 
 
+# 사용자와 그룹
 
+- 리눅스는 다중 사용자 시스템(Multi-User system)
 
+- root :  기본적으로 제공되는 계정으로 모든 작업에 대한 권한을 가진 수퍼유저(Superuser)
 
+- 모든 사용자는 하나 이상의 그룹에 소속
+
+- 계정 정보는 /etc/passwd 파일에 정의 
+
+  ~~~
+  user_nmae : password : user_id : group_id : description : home_dir : shell
+  ~~~
+
+  user_id 와 group_id가 0번이면 루트의 권한을 갖는다.
+
+  일반 계정의 user_id는 1000부터 생성된다.
+
+- /etc/passwd 파일에 패스워드가 "x"로 표시된 경우, 사용자의 비밀번호가 /etc/shadow 파일에 암호화되어 저장
+- 그룹정보는 /etc/group 파일에 있다.
+  - 사용자의 보조그룹은 볼 수 있다.
+
+- 사용자 생성시 그룹을 지정하지 않으면 사용자 아이디로 새 그룹 아이디를 생성하여 적용한다.
+
+### umask 
 
 
 

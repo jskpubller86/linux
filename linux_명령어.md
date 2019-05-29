@@ -262,6 +262,41 @@ more  명령어와 용도가 비슷하지만 기능이 더 확장되어 있다. 
 
 
 
+# 사용자 관련 명령어
+
+### adduser
+
+새로운 사용자를 추가해 준다.  명령을 실행하면 /etc/passwd, /etc/shadow, /etc/group 파일에 새로운 행이 추가된다.
+
+~~~
+# adduser newuser1       → newuser1 이라는 이름의 사용자  생성
+  새 UNIX 암호 입력 :      → 암호를 생성
+  새 UNIX 암호 재입력 :    → 전체 이름 입력(생략해도 됨)
+  
+  
+# adduser --uid 1111 newuser2   → new
+# adduser --uid 1111 newuser
+  
+  
+~~~
+
+
+
+# 파일 위치 검색 
+
+- find [경로] [옵션] [조건] [action] : 기본 파일 찾기 
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
