@@ -27,7 +27,7 @@ ref ) 무료로 얻은 소프트웨어를  유상으로 판매할 수 있는 자
   - 4.6.4   =  주(major)버전 .부(minor) 버전.패치(patch)버전
 - 사용자가 쉘명령어를 전달하면 커널은 그 명령을 해석하여 디바이스를 통제한다.
 
-![커널](C:\Users\student\Documents\멀티캠퍼스\network_management\images\kener.PNG)
+![커널](images\kener.PNG)
 
 # 리눅스 배포판
 
